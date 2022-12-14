@@ -72,19 +72,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  color: red;
-  font-size: 30px;
-}
-
-.block {
-  padding: 30px;
-  font-size: 40px;
-  line-height: 20px;
-  color: rgb(62, 227, 12);
-}
-.block span {
-  color: blue;
-}
-.block .block_text {
-  font-size: 80px;
+  background-color: black;
 }

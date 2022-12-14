@@ -1,21 +1,84 @@
 @import "_nullstyle";
 
 	body{
-		color: red;
-		font-size: 30px;	
-	}
+		background-color: black;
+}
 
-.block{
-	padding: 30px;
-	font-size: 40px;
-	line-height: 20px;
-	color: rgb(62, 227, 12);
-	span{
-		color: blue;
-	}
-	.block_text{
-		font-size: 80px;
-	}
+.wrap {
+}
+.conteiner {
+}
+.burger {
+}
+.search {
+
+		&__on {
+		}
+}
+.form {
+
+		&__field {
+		}
+
+		&__button {
+		}
+}
+.grid-one {
+
+		&__1 {
+		}
+
+		&__2 {
+		}
+
+		&__3 {
+		}
+
+		&__4 {
+		}
+
+		&__5 {
+		}
+}
+.picture {
+}
+.insta {
+}
+.idea {
+}
+.title {
+}
+.subtitle {
+}
+.arrow {
+}
+.alone-one {
+}
+.alone-two {
+}
+.grid-two {
+
+		&__1 {
+		}
+
+		&__2 {
+		}
+
+		&__3 {
+		}
+
+		&__4 {
+		}
+
+		&__5 {
+		}
+
+		&__6 {
+		}
+}
+.alone-three {
+}
+.load {
 }
 
 
