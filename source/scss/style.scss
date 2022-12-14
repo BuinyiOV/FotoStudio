@@ -1,0 +1,22 @@
+@import "_nullstyle";
+
+	body{
+		color: red;
+		font-size: 30px;	
+	}
+
+.block{
+	padding: 30px;
+	font-size: 40px;
+	line-height: 20px;
+	color: rgb(62, 227, 12);
+	span{
+		color: blue;
+	}
+	.block_text{
+		font-size: 80px;
+	}
+}
+
+
+
