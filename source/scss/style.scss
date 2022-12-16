@@ -1,27 +1,186 @@
 @import "_nullstyle";
 
 	body{
-		background-color: black;
+		background-color: rgb(153, 142, 142);
 }
 
 .wrap {
+min-height: 100%;
+overflow: hidden;
 }
-.conteiner {
-}
-.burger {
-}
-.search {
+.conteiner {}
 
-		&__on {
+//?Верхня панель---------------------------------------------------------------------------
+
+.head {
+	max-width: 1370px;
+	display: flex;
+
+		&__burger {
+			background-color: #597aef;
+			display: block;
+			flex: 0 1 7.3%;
+			padding: 0 0 7.3% 0;
+
+		}
+
+		&__search {
+			display: block;
+			flex: 0 1 85.4%;
+			background-color: #ffffff;
+		}
+
+		&__block {
+			background-color: #ffffff;
+			display: block;
+			flex: 0 1 7.3%;
 		}
 }
+
+// ?Форма пошуку--------------------------------------------------
+/*.on {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__form {
+	}
+}
+
 .form {
+	border: 1px solid #6080f0;
+	border-radius: 25px;
+	display: flex;
+	justify-content: space-between;
+	min-width: 50%;
+	align-self: flex-end;
 
-		&__field {
-		}
+	&__form {
+		display: flex;
+		min-width: 90%;
+	}
 
-		&__button {
-		}
+	&__field {
+		margin: 0 1.2em 0 1.2em;
+		font-size: 1.8em;
+		line-height: 1.8em;
+		flex: 1 1 auto;
+		background: url(/img/items/search.png);
+	}
+
+	&__button {
+		background-color: #6080f0;
+		margin-right: 0.8em;
+		font-size: 1.8em;
+		line-height: 1.8em;
+		position:relative ;
+		z-index: 1;
+		flex: 0 0 50px;
+	}
+
+	&__img {
+		margin: 1em;
+		position:relative ;
+		z-index: 2;
+	}
+}
+*/
+
+.on {display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	&__form {
+		
+	}
+}
+
+.form {
+	display: flex;
+	justify-content: flex-end;
+	align-self: flex-end;
+
+
+	&__form {
+		display: flex;
+		overflow: hidden;
+		border: 2px solid #6080f0;
+		border-radius: 25px;
+		background-color: #ffffff;
+		width: 47px;
+		transition: all 0.5s linear 0s;
+
+	}
+
+	&__form:focus-within {
+		min-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		border: 2px solid #6080f0;
+		border-radius: 25px;
+		background-color:  #6080f0;
+		width: 50%;
+	}
+
+	&__field {
+		font-size: 1.8em;
+		line-height: 1.8em;
+		background: url("/img/items/search.png") 13px no-repeat,
+		#ffffff;
+		position: relative;
+		z-index: 4;
+		width: 2em;
+		left: 0px;
+		transition: all 0.5s linear 0s;
+	}
+
+	&__field:focus-within {
+		background: none;
+		background-color: #6080f0;
+		position: relative;
+		z-index: 2;
+		left: 20px;
+		padding-right: 3.5em;
+		width: 20em;
+		transition: all 0.5s linear 0s;
+	}
+
+	&__button {
+		background-color: #6080f0;
+		font-size: 1.8em;
+		line-height: 1.9em;
+		width: 2.3em;
+		margin-left: -2.6em;
+		position: relative;
+		z-index: 3;
+		transition: all 1s linear 0s;
+	}
+
+	&__button:focus {
+		background-color: #6080f0;
+		font-size: 1.8em;
+		line-height: 1.9em;
+		width: 2.3em;
+		margin-left: -2.5em;
+		position: relative;
+		z-index: 1;
+	}
+	
+
+	&__img {
+		display: none;
+	}
+}
+//?Обгортка контенту-----------------------------------------------------------------
+
+.content {
+	max-width: 1170px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 7.3%;
+}
+.main {
+	flex: 1 1 auto;
 }
 .grid-one {
 
@@ -78,8 +237,7 @@
 }
 .alone-three {
 }
+.footer {
+}
 .load {
 }
-
-
-
